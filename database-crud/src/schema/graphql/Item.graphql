@@ -1,7 +1,9 @@
+scalar Date
+
 type Item {
   id: Int!
   description: String!
   done: Boolean!
-  created: Int!
-  updated: Int!
+  created: Date
+  updated: Date
 }
