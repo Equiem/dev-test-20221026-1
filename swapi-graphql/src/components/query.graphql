@@ -1,0 +1,13 @@
+query allPeople($first: Int!) {
+  allPeople(first: $first) {
+    people {
+      id
+      name
+      skinColor
+      homeworld {
+        id
+        name
+      }
+    }
+  }
+}

@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "SWAPI GraphQL test for Equiem dev candidates",
   "scripts": {
-    "build": "echo 'Nothing to do yet. (This is run by circleci before starting your app).'",
+    "build": "npm run codegen",
     "start": "react-scripts start",
     "test": "cypress run",
     "lint": "eslint src --ext js,jsx,ts,tsx && cd cypress && eslint . --ext js,jsx,ts,tsx",
@@ -17,6 +17,8 @@
   "license": "ISC",
   "dependencies": {
     "@apollo/client": "^3.7.1",
+    "@graphql-codegen/typescript-operations": "^2.5.7",
+    "@graphql-codegen/typescript-react-apollo": "^3.3.6",
     "graphql": "^16.6.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -25,7 +27,7 @@
   "devDependencies": {
     "@equiem/eslint-config": "1.2.3",
     "@equiem/prettier-config": "1.2.0",
-    "@graphql-codegen/cli": "2.13.8",
+    "@graphql-codegen/cli": "^2.13.8",
     "@graphql-codegen/client-preset": "^1.1.1",
     "@graphql-codegen/introspection": "2.2.1",
     "@types/node": "16.18.0",

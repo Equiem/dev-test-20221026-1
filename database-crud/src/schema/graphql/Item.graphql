@@ -4,6 +4,6 @@ type Item {
   id: Int!
   description: String!
   done: Boolean!
-  created: Date
-  updated: Date
+  created: Int!
+  updated: Int!
 }

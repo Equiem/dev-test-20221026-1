@@ -1,13 +1,9 @@
 import React from "react";
-import { useQuery } from "@apollo/client";
-import { PEOPLE_QUERY } from "./components/query";
-import type { Root } from "./gql/graphql";
 import { PersonItem } from "./components/PersonItem";
+import { useAllPeopleQuery } from "./generated-types";
 
 export const App: React.FC = () => {
-  const { data } = useQuery<Root>(PEOPLE_QUERY, {
-    variables: { first: 10 },
-  });
+  const { data } = useAllPeopleQuery({ variables: { first: 10 } });
 
   return (
     <>

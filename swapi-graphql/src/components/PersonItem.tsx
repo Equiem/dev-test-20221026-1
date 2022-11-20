@@ -1,6 +1,6 @@
 import React from "react";
 import type { FC } from "react";
-import type { Person } from "../gql/graphql";
+import type { Person } from "../generated-types";
 
 interface IProps {
   person?: Person;

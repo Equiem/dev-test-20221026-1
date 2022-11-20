@@ -5,7 +5,7 @@ const AppDataSource = new DataSource({
   type: "postgres",
   url: "postgres://postgres@localhost:5432/postgres",
   ssl: false,
-  synchronize: true,
+  synchronize: false,
   logging: false,
   entities: [Item],
   migrations: [`${__dirname}/migration/**/!(*.spec.*)`],
