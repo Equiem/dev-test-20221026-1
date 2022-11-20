@@ -32,10 +32,10 @@ describe("Item", () => {
 
     expect(result.item).to.deep.contain({
       // @ts-expect-error created not yet implemented
-      // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access, @typescript-eslint/no-unsafe-call
+      // eslint-disable-next-line @typescript-eslint/no-unsafe-call
       created: Math.round(item.created.getTime() / 1000),
       // @ts-expect-error updated not yet implemented
-      // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access, @typescript-eslint/no-unsafe-call
+      // eslint-disable-next-line @typescript-eslint/no-unsafe-call
       updated: Math.round(item.updated.getTime() / 1000),
     });
   });

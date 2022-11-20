@@ -1,6 +1,5 @@
 import { Column, Entity, PrimaryGeneratedColumn } from "typeorm";
 
-
 @Entity()
 export class Item {
   @PrimaryGeneratedColumn()
@@ -18,4 +17,3 @@ export class Item {
   @Column()
   public updated!: number;
 }
-
