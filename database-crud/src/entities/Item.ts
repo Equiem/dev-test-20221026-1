@@ -10,4 +10,10 @@ export class Item {
 
   @Column({ default: false })
   public done!: boolean;
+
+  @Column()
+  public created!: number;
+
+  @Column()
+  public updated!: number;
 }
